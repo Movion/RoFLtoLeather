@@ -19,7 +19,7 @@ public class boneHuntingKnife {
 
     public static ItemStack boneHuntingKnife;
 
-    private void createBoneHuntingKnife(){
+    public void createBoneHuntingKnife(){
         //Create Item "Bone Hunting Knife"
         ItemStack item = new ItemStack(Material.IRON_SWORD, 1);
         ItemMeta meta = item.getItemMeta();
@@ -34,14 +34,14 @@ public class boneHuntingKnife {
 
         //Create Recipe for Bone Hunting Knife
         {
-            NamespacedKey key = new NamespacedKey((Plugin) this, "BoneHuntingKnife");
+            NamespacedKey key = new NamespacedKey(plugin, "BoneHuntingKnife");
             ShapedRecipe recipe = new ShapedRecipe(key, boneHuntingKnife);
             recipe.shape(
                     "  N",
                     " NN",
                     "BN ");
             recipe.setIngredient('N', Material.IRON_INGOT);
-            recipe.setIngredient('N', Material.BONE);
+            recipe.setIngredient('B', Material.BONE);
 
             Bukkit.addRecipe(recipe);
         }
