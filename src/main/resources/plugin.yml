@@ -1,0 +1,7 @@
+name: RoFLtoLeather
+version: '${project.version}'
+main: me.movion.rofltoleather.RoFLtoLeather
+api-version: 1.19
+authors: [ Dernert, movion ]
+description: Spigot rework of RoFL to Leather from curseforge
+website: movion.me
